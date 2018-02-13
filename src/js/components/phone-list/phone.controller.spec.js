@@ -4,7 +4,7 @@ import { PhoneListController } from './phone.controller.js';
 
 describe('PhoneListController', function() {
 
-    it('should create a `phones` model with 3 phones', function() {
+    it('should create a `phones` model with 3 phones', () => {
         var scope = {};
         var ctrl = new PhoneListController(scope);
 

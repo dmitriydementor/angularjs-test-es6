@@ -1,7 +1,9 @@
-<ul>
+<ul class="phones-list">
     <li ng-repeat="phone in phones">
         <span>{{phone.name}}</span>
         <p>{{phone.description}}</p>
     </li>
 </ul>
 <p>Amount of phones: {{phones.length}}</p>
+<button type="button" name="button" ng-click="onTestButtonClick()">Test</button>
+<p ng-if="isTestButtonClicked">Button was clicked {{amountOfClicks}} times</p>
